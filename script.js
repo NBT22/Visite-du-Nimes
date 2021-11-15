@@ -1,5 +1,5 @@
-var audio = new Audio("./Audio/Présentation.wav");
-audio.addEventListener('ended', endHandler, false);
+var Présentation = new Audio("./Audio/Présentation.wav");
+Présentation.addEventListener('ended', endHandler, false);
 function endHandler() {
   window.location.href = "./Slides/";
 }
