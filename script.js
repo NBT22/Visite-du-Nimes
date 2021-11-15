@@ -1,6 +1,6 @@
 var x = document.getElementById("Présentation Audio"); 
 
-x.onended  = function(){
+x.onended = function(){
   window.location.href = "./Slides/";
 }
 
