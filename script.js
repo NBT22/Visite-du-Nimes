@@ -1,10 +1,6 @@
-var links = document.getElementsByID('Présentation'),
-        audio = document.getElementById('Présentation Audio'),
-    clickHandler = function () {
-        audio.play();
-    }
-;
+var sound = new Audio("file.wav");
 
-for (var i in links) {
-    links[i].addEventListener('click', clickHandler);
-}
+a.addEventListener('click',()=>{
+	sound.currentTime = 0;
+	sound.play();
+});
