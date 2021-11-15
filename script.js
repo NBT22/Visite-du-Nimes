@@ -1,10 +1,13 @@
-var x = document.getElementById("Présentation Audio"); 
+var Présentation = getElementByID("Présentation");
+var PrésentationAudio = getElementByID("Présentation Audio");
 
-x.onended = function(){
-  window.location.href = "./Slides/";
+function clickHandler() {
+  PrésentationAudio.play();
 }
 
-function playAudio() { 
-x.play();
-
+function endHandler() {
+  alert('ended');
 }
+
+Présentation.addEventListener('click', clickHandler, false);
+PrésentationAudio.addEventListener('ended', endHandler, false);
