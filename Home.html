@@ -1,7 +1,14 @@
 <!DOCTYPE html>
   <head>
     <title>Mon Viste du Nîmes</title>
-    <script src = "./script.js"></script>
+    <script>
+      var Présentation = new Audio("./Audio/Présentation.wav");
+      
+      Présentation.addEventListener('ended', endHandler, false);
+      function endHandler() {
+        window.location.href = "./Slides/";
+      }
+    </script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
