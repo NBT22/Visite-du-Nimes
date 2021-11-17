@@ -1,22 +1,14 @@
 <!DOCTYPE html>
   <head>
     <title>Mon Viste du Nîmes</title>
-    <script>
-      var Présentation = new Audio("./Audio/Présentation.wav");
-      
-      Présentation.addEventListener('ended', endHandler, false);
-      function endHandler() {
-        window.location.href = "./Slides/";
-      }
-    </script>
+    <script src = './script.js'></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
       <button onclick="Présentation.play();">Présentation</button>
-        <div id = "CIC Ad" style = "display: contents;">
-          <a href = "https://www.cic.fr/fr/agences/particuliers/10096/18057/00/000?y_source=1_MTQxNjA0MTAtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D" style = "position: relative; width: 15%; top:50%; left: 85%;">
-            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-              <defs></defs>
+        <div id = "CIC Ad" style = "display: contents;" onclick="CIC">
+          <!--<a href = "https://www.cic.fr/fr/agences/particuliers/10096/18057/00/000?y_source=1_MTQxNjA0MTAtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D" style = "position: relative; width: 15%; top:50%; left: 85%;">-->
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style = "position: relative; width: 15%; top:50%; left: 85%;">
               <clipPath id="p.0">
                 <path d="m0 0l240.0 0l0 240.0l-240.0 0l0 -240.0z" clip-rule="nonzero"></path>
               </clipPath>
