@@ -14,7 +14,9 @@ Button {
 Button:hover, Button:focus {
     background-color: #2980B9;
     }
-#content
-    {
+#content {
         position:absolute; left: 0; right: 0; bottom: 0; top: 51px; 
     }
+#CIC {
+    cursor: pointer;
+}
