@@ -5,15 +5,32 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .parent {
+      position: relative;
+      float: left;
+      width: 15%;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(10, 1fr);
       grid-column-gap: 0;
       grid-row-gap: 0;
+      padding-bottom: 15%;
+      overflow: hidden;
     }
 
-    .div1 { grid-area: 10 / 1 / 11 / 2; padding: 5px; margin: 5px; }
-    .div2 { grid-area: 8 / 1 / 9 / 2; padding: 5px; margin: 5px; }
+    .div1 {
+      grid-area: 10 / 1 / 11 / 2;
+      position: absolute;
+      height: 80%;
+      width: 90%;
+      padding: 10% 5%;
+    }
+    .div2 {
+      grid-area: 9 / 1 / 10 / 2;
+      position: absolute;
+      height: 80%;
+      width: 90%;
+      padding: 10% 5%;
+    }
     .div3 { grid-area: 8 / 1 / 9 / 2; }
     .div4 { grid-area: 7 / 1 / 8 / 2; }
     .div5 { grid-area: 6 / 1 / 7 / 2; }
