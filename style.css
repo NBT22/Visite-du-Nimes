@@ -17,6 +17,17 @@ Button:hover, Button:focus {
 #content {
         position:absolute; left: 0; right: 0; bottom: 0; top: 51px; 
     }
-#CIC {
+.square {
+    float: inline-end;
+    position: relative;
+    width: 15%;
+    padding-bottom: 15%;
+    margin: 1.5%;
+    overflow: hidden;
     cursor: pointer;
+}
+.content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
